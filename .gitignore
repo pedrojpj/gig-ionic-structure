@@ -1,0 +1,11 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+node_modules/
+platforms/
+plugins/
+dist/
+www/lib/
+www/app/core/core.config.js
+www/app/core/core.templates.js
+parameters.json

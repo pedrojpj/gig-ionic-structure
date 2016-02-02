@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# rev 2 - 2016-02-01T15:37:41.285Z
+
+CACHE:
+assets/css/styles.css
+assets/img/adam.jpg
+assets/img/ben.png
+assets/img/ionic.png
+assets/img/max.png
+assets/img/mike.png
+assets/img/perry.png
+
+NETWORK:
+*

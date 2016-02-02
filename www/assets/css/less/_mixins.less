@@ -1,0 +1,70 @@
+/*** MIXINS ***/
+
+.animated(@time: 1s) {
+    -webkit-animation-duration: @time;
+    animation-duration: @time;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.clearfix() {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+.clickableArea(@size : 20px) {
+    &:after {
+        content:'';
+        position:absolute;
+        top:-@size; bottom:-@size;
+        left:-@size; right:-@size;
+    }
+}
+
+.minheightwindow(@size : 7rem) {
+    min-height: calc(100vh - @size);
+}
+
+.squareAbsolute(@size: 50px) {
+    width: @size;
+    height: @size;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -@size/2;
+    margin-left: -@size/2;
+}
+
+.button() {
+    display: inline-block;
+    margin: 0 1rem;
+    min-width: 11.5rem;
+    background: #999999;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1.25rem 0;
+
+    &.left {
+        float: left;
+    }
+
+    &.action {
+        background-color: #b11016;
+    }
+
+    &.black {
+        background-color: #000000;
+    }
+
+    span {
+        display:inline-block;
+        width: 2rem;
+        height: 2rem;
+    }
+}

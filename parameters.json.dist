@@ -1,0 +1,70 @@
+{
+    "_comment": "server: local, local-https, dev, live, quality, staging",
+        "local-https": {
+            "constants" : {
+                "URL_SERVICE" : "https://api-whatsred.s.gigigoapps.com/v1",
+                "URL_IMAGE" : "https://images-whatsred.s.gigigoapps.com/v1/media/image/{{image}}/{{width}}/{{height}}",
+                "LOG": true,
+                "TEMPLATE_CACHE": false,
+                "TIMEOUT" : 5000
+            },
+            "directory" : "src",
+            "port" : 443
+        },
+        "local": {
+            "constants" : {
+                "URL_SERVICE" : "https://api-whatsred.s.gigigoapps.com/v1",
+                "URL_IMAGE" : "https://images-whatsred.s.gigigoapps.com/v1/media/image/{{image}}/{{width}}/{{height}}",
+                "LOG": true,
+                "TEMPLATE_CACHE": false,
+                "TIMEOUT" : 5000
+            },
+            "directory" : "src",
+            "port" : 8002
+        },
+    "dev": {
+        "constants" : {
+            "URL_SERVICE" : "https://api-whatsred.d.gigigoapps.com/v1",
+            "URL_IMAGE" : "https://images-whatsred.d.gigigoapps.com/v1/media/image/{{image}}/{{width}}/{{height}}",
+            "LOG": true,
+            "TEMPLATE_CACHE": false,
+            "TIMEOUT" : 5000
+        },
+        "directory" : "src",
+        "port" : 8002
+    },
+    "staging": {
+        "constants" : {
+            "URL_SERVICE" : "https://api-whatsred.s.gigigoapps.com/v1",
+            "URL_IMAGE" : "https://images-whatsred.s.gigigoapps.com/v1/media/image/{{image}}/{{width}}/{{height}}",
+            "LOG": true,
+            "TEMPLATE_CACHE": false,
+            "TIMEOUT" : 5000
+        },
+        "directory" : "src",
+        "port" : 8002
+    },
+    "quality": {
+        "constants" : {
+            "URL_SERVICE" : "https://api-whatsred.q.gigigoapps.com/v1",
+            "URL_IMAGE" : "https://images-whatsred.q.gigigoapps.com/v1/media/image/{{image}}/{{width}}/{{height}}",
+            "LOG": true,
+            "TEMPLATE_CACHE": true,
+            "TIMEOUT" : 5000
+        },
+        "directory" : "dist",
+        "port" : 8002
+    },
+    "live": {
+        "constants" : {
+            "URL_SERVICE" : "https://api.whatsredpro.com/v1",
+            "URL_IMAGE" : "https://api.whatsredpro.com/v1/media/image/{{image}}/{{width}}/{{height}}",
+            "LOG": false,
+            "TEMPLATE_CACHE": true,
+            "TIMEOUT" : 5000
+        },
+        "directory" : "dist",
+        "port" : 8002
+    },
+  "server" : "local"
+}
